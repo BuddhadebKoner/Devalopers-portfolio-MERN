@@ -1,0 +1,115 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node.js dependencies
+node_modules/
+
+# Build output
+build/
+dist/
+dist-ssr/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories and files
+.vscode/
+.idea/
+.DS_Store
+
+# Visual Studio files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Temporary files
+*.swp
+*.bak
+*.tmp
+*.cache
+
+# Dependency lock files
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+# Testing files
+coverage/
+junit.xml
+test-results/
+
+# Compiled files
+*.min.js
+*.min.css
+
+# TypeScript specific files
+*.tsbuildinfo
+
+# Server-specific files
+server/.env
+server/.env.local
+server/.env.development.local
+server/.env.test.local
+server/.env.production.local
+
+# Client-specific files
+client/.env
+client/.env.local
+client/.env.development.local
+client/.env.test.local
+client/.env.production.local
+
+# Storybook files
+.storybook/
+*.storybook/
+
+# Sass cache
+.sass-cache/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Parcel-bundler cache (used in some projects)
+.cache/
+
+# Temporary folders and files
+.tmp/
+
+# MacOS specific files
+._*
+.Spotlight-V100
+.Trashes
+
+# Build and artifact directories
+build/
+dist/
+out/
+target/
+
+# Other IDEs and Editors
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Prettier
+
+
+# ESLint
+.eslintcache
+
+# Nuxt.js specific files
+.nuxt/
