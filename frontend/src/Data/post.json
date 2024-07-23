@@ -1,0 +1,22 @@
+{
+   "posts": [
+      {
+         "dp_link": "https://example.com/profile1.jpg",
+         "user_name": "john_doe",
+         "image_link": "https://example.com/image1.jpg",
+         "image_desc": "Enjoying a beautiful sunset at the beach."
+      },
+      {
+         "dp_link": "https://example.com/profile2.jpg",
+         "user_name": "john_doe",
+         "image_link": "https://example.com/image2.jpg",
+         "image_desc": "Working on a new project in my home office."
+      },
+      {
+         "dp_link": "https://example.com/profile3.jpg",
+         "user_name": "john_doe",
+         "image_link": "https://example.com/image3.jpg",
+         "image_desc": "Exploring the city during a weekend getaway."
+      }
+   ]
+}

@@ -1,0 +1,28 @@
+{
+   "projects": [
+     {
+       "title": "Project A",
+       "image_link": "https://example.com/project-a.jpg",
+       "contributors": [
+         "John Doe",
+         "Jane Smith"
+       ]
+     },
+     {
+       "title": "Project B",
+       "image_link": "https://example.com/project-b.jpg",
+       "contributors": [
+         "John Doe",
+         "Alice Johnson"
+       ]
+     },
+     {
+       "title": "Project C",
+       "image_link": "https://example.com/project-c.jpg",
+       "contributors": [
+         "John Doe"
+       ]
+     }
+   ]
+ }
+ 

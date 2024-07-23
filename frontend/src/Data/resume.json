@@ -1,0 +1,86 @@
+{
+   "name": "John Doe",
+   "contact_information": {
+      "address": "123 Main St, Anytown, USA",
+      "phone": "(123) 456-7890",
+      "email": "john.doe@example.com"
+   },
+   "skills": {
+      "Skill Category 1": [
+         "Skill 1",
+         "Skill 2",
+         "Skill 3",
+         "Skill 4"
+      ],
+      "Skill Category 2": [
+         "Skill 1",
+         "Skill 2",
+         "Skill 3",
+         "Skill 4"
+      ],
+      "Skill Category 3": [
+         "Skill 1",
+         "Skill 2",
+         "Skill 3"
+      ],
+      "Skill Category 4": [
+         "Skill 1",
+         "Skill 2",
+         "Skill 3"
+      ],
+      "Skill Category 5": [
+         "Skill 1",
+         "Skill 2",
+         "Skill 3",
+         "Skill 4"
+      ]
+   },
+   "experience": [
+      {
+         "company": "Company 1",
+         "position": "Position 1",
+         "duration": "Jan 2020 - Dec 2022",
+         "responsibilities": [
+            "Responsibility 1",
+            "Responsibility 2",
+            "Responsibility 3"
+         ]
+      },
+      {
+         "company": "Company 2",
+         "position": "Position 2",
+         "duration": "Jan 2018 - Dec 2019",
+         "responsibilities": [
+            "Responsibility 1",
+            "Responsibility 2"
+         ]
+      }
+   ],
+   "education": [
+      {
+         "institution": "Institution 1",
+         "degree": "Degree 1",
+         "duration": "Sep 2015 - Jun 2019",
+         "current_status": "Graduated",
+         "gpa": "3.8",
+         "focus_areas": [
+            "Focus Area 1",
+            "Focus Area 2"
+         ],
+         "club_membership": {
+            "club": "Club 1",
+            "membership": "Active Member"
+         }
+      },
+      {
+         "institution": "Institution 2",
+         "degree": "Degree 2",
+         "duration": "Sep 2013 - Jun 2015",
+         "12th_marks": "85%",
+         "10th_marks": "90%"
+      }
+   ],
+   "awards": [
+      "Award 1"
+   ]
+}

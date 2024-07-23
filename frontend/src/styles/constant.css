@@ -1,8 +1,89 @@
 :root {
-   --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-   --font-color: #333;
-   --background-color: #f5f5f5;
-   --link-color: #007bff;
-   --border-color: #ccc;
-   --focus-border-color: #007bff;
+   /* light mode */
+   --primaryLightBG: #E1F0DA;
+   --PrimaryLightFocus: #E76F51;
+   --PrimaryLightText: #1B2430;
+   --secoundryLightText: #000000;
+
+   /* Dark mode */
+   --primaryDarkBG: #1B2430;
+   --PrimaryDarkFocus: #E76F51;
+   --PrimaryDarkText: #FFFBDA;
+   --secoundryDarkText: #FFFFFF;
+}
+
+.primary_button_style {
+   box-sizing: border-box;
+   font-size: 1.1rem;
+   font-weight: 900;
+   padding: 10px 40px;
+   border-radius: 0 50px 0 50px;
+   background-color: var(--PrimaryDarkFocus);
+   color: var(--PrimaryDarkText);
+   border: 2px solid rgba(255, 255, 255, 0);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* Reset default browser styles */
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   width: 100vw;
+   height: 500vh;
+   overflow-x: hidden;
+   overflow-y: auto;
+   padding: 10px;
+   background-color: var(--primaryDarkBG);
+   color: var(--secoundryDarkText);
+}
+
+#root {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+
+/* scrollbar */
+
+/* For Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+   width: 12px;
+   /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+   background: #1e1e1e;
+   /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: #555;
+   /* Thumb color */
+   border-radius: 10px;
+   /* Roundness of the scroll thumb */
+   border: 3px solid #1e1e1e;
+   /* Padding around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: #888;
+   /* Thumb color on hover */
+}
+
+/* For Firefox */
+* {
+   scrollbar-width: thin;
+   /* Width of the scrollbar */
+   scrollbar-color: #555 #1e1e1e;
+   /* Thumb and track color */
 }

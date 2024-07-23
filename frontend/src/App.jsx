@@ -1,14 +1,14 @@
-import React from 'react'
-import './styles/App.css'
-import './styles/constant.css'
+import React from "react";
+import "./styles/App.css";
+import "./styles/constant.css";
+import Index from "./pages/Index";
 
 function App() {
-
-  return (
-    <>
-      <h1>Wellcome Here</h1>
-    </>
-  )
+   return (
+      <>
+         <Index />
+      </>
+   );
 }
 
-export default App
+export default App;
