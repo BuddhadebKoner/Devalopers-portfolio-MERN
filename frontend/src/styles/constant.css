@@ -4,26 +4,11 @@
    --PrimaryLightFocus: #E76F51;
    --PrimaryLightText: #1B2430;
    --secoundryLightText: #000000;
-
    /* Dark mode */
    --primaryDarkBG: #1B2430;
    --PrimaryDarkFocus: #E76F51;
    --PrimaryDarkText: #FFFBDA;
    --secoundryDarkText: #FFFFFF;
-}
-
-.primary_button_style {
-   box-sizing: border-box;
-   font-size: 1.1rem;
-   font-weight: 900;
-   padding: 10px 40px;
-   border-radius: 0 50px 0 50px;
-   background-color: var(--PrimaryDarkFocus);
-   color: var(--PrimaryDarkText);
-   border: 2px solid rgba(255, 255, 255, 0);
-   display: flex;
-   align-items: center;
-   justify-content: center;
 }
 
 /* Reset default browser styles */
@@ -37,11 +22,10 @@
 
 body {
    width: 100vw;
-   height: 500vh;
+   height: fit-content;
    overflow-x: hidden;
    overflow-y: auto;
-   padding: 10px;
-   background-color: var(--primaryDarkBG);
+   background: var(--primaryDarkBG);
    color: var(--secoundryDarkText);
 }
 
@@ -50,6 +34,7 @@ body {
    flex-direction: column;
    align-items: center;
    justify-content: flex-start;
+   user-select: none;
 }
 
 
