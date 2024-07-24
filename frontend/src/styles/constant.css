@@ -25,7 +25,7 @@ body {
    height: fit-content;
    overflow-x: hidden;
    overflow-y: auto;
-   background: var(--primaryDarkBG);
+   /* background: var(--primaryDarkBG); */
    color: var(--secoundryDarkText);
 }
 

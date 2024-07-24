@@ -1,5 +1,6 @@
 import React from "react";
 import useTheme from "@/context/Theme";
+import assets from "@/assets/assets";
 
 export default function Themebtn() {
   const { themeMode, lightTheme, darkTheme } = useTheme();
@@ -10,16 +11,27 @@ export default function Themebtn() {
   };
 
   return (
-    <label className="relative inline-flex items-center cursor-pointer">
+    <label className="swap swap-rotate">
       <input
         type="checkbox"
         className="sr-only peer"
         onChange={onChangeBtn}
         checked={themeMode === "dark"}
       />
-      <div className={`w-11 h-6 rounded-full peer-focus:outline-none peer-focus:ring-4 ${themeMode === "dark" ? "bg-gray-700" : "bg-gray-200"} peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 peer-checked:bg-blue-600`}>
-        <div className={`absolute top-[2px] left-[2px] bg-white border-gray-300 border rounded-full h-5 w-5 transition-transform ${themeMode === "dark" ? "translate-x-full border-white" : "border-gray-300"} after:content-['']`}></div>
-      </div>
+
+      {/* Sun icon */}
+      <img
+        src={assets.lightMode} 
+        alt="Sun icon for light mode"
+        className={`swap-off h-10 w-10 ${themeMode === "dark" ? "hidden" : "block"}`}
+      />
+
+      {/* Moon icon */}
+      <img
+        src={assets.darkMode} 
+        alt="Moon icon for dark mode"
+        className={`swap-on h-10 w-10 ${themeMode === "dark" ? "block" : "hidden"}`}
+      />
     </label>
   );
 }

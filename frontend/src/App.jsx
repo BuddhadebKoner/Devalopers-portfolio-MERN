@@ -5,7 +5,10 @@ import Index from "./pages/Index";
 import { ThemeProvider } from "./context/Theme";
 
 function App() {
-   const [themeMode, setThemeMode] = useState("dark");
+   // Initialize themeMode from localStorage, defaulting to "dark"
+   const [themeMode, setThemeMode] = useState(() => {
+      return localStorage.getItem("themeMode") || "dark";
+   });
 
    const darkTheme = () => {
       setThemeMode("dark");
@@ -14,19 +17,19 @@ function App() {
       setThemeMode("light");
    };
 
-   // theme change function
-
    useEffect(() => {
+      // Update localStorage whenever themeMode changes
+      localStorage.setItem("themeMode", themeMode);
+
+      // Update the HTML class list
       document.querySelector("html").classList.remove("light", "dark");
       document.querySelector("html").classList.add(themeMode);
    }, [themeMode]);
 
    return (
-      <>
-         <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
-            <Index />
-         </ThemeProvider>
-      </>
+      <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
+         <Index />
+      </ThemeProvider>
    );
 }
 

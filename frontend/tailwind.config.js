@@ -14,6 +14,7 @@ module.exports = {
          primaryLightFocus: "#E76F51",
          primaryLightText: "#1B2430",
          secoundryLightText: "#000000",
+         whoamiDarkBG: "#0C0C0C",
          primaryDarkBG: "#1B2430",
          primaryDarkFocus: "#E76F51",
          primaryDarkText: "#FFFBDA",

@@ -64,7 +64,7 @@ export default function Homehero() {
             >
                {bio}
             </p>
-            <div className="home_hero_container_btn mt-14 cursor-pointer">
+            <div className="home_hero_container_btn mt-14">
                <a
                   href={github}
                   target="_blank"
@@ -83,11 +83,11 @@ export default function Homehero() {
             </div>
          </section>
          <div
-            className={`iconCloud_container w-full h-fit bg-gradient-to-b from-transparent to-[#6e3a3a] ${
-               themeMode === 'dark' ? '' : ''
+            className={`iconCloud_container w-full h-fit bg-gradient-to-b from-transparent to-[#0C0C0C] ${
+               themeMode === 'dark' ? 'bg-primaryDarkBG' : 'bg-primaryLightBG'
             }`}
          >
-            <IconCloud iconSlugs={slugs} />
+            <IconCloud iconSlugs={slugs} themeMode/>
          </div>
       </>
    );
