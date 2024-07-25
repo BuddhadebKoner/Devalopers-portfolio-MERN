@@ -1,5 +1,25 @@
-{
-   "name": "John Doe",
-   "short_desc": "Web developer with a knack for building dynamic websites.",
-   "see_more_link": "https://example.com/about-john-doe"
-}
+[
+   {
+     "work": "React Developer",
+     "title": "React Developer",
+     "short_desc": "As a React Developer, I specialize in crafting dynamic and responsive user interfaces that bring digital experiences to life. My expertise lies in leveraging the power of React to build scalable web applications that are not only functional but also aesthetically pleasing. I excel at creating reusable components, managing state efficiently, and implementing smooth transitions that enhance user engagement. With a keen eye for detail and a passion for innovation, I strive to deliver solutions that meet both user needs and business goals.",
+     "see_more_link": "https://example.com/about-john-doe-react",
+     "logo": "react"
+   },
+   {
+     "work": "Python",
+     "title": "Python Developer",
+     "short_desc": "As a Python Developer, I harness the versatility of Python to tackle a diverse range of projects, from data analysis and backend development to automation and scripting. My experience includes designing and implementing robust solutions that handle large datasets, optimize performance, and integrate seamlessly with other technologies. I am adept at using Python's rich ecosystem of libraries and frameworks to build efficient and reliable applications. Whether it's developing complex algorithms or streamlining workflows, my focus is on delivering high-quality results that drive success.",
+     "see_more_link": "https://example.com/about-john-doe-python",
+     "logo": "python"
+
+   },
+   {
+     "work": "Database Management",
+     "title": "Database Administrator",
+     "short_desc": "In the realm of Database Management, I bring expertise in overseeing and optimizing database systems to ensure their reliability, performance, and security. My role involves designing scalable database architectures, implementing backup and recovery strategies, and fine-tuning queries to achieve peak efficiency. With a deep understanding of various database technologies, I am skilled in managing data integrity, handling complex migrations, and providing insights through effective data organization. My goal is to create a solid foundation for data-driven decision-making and ensure that databases operate smoothly and effectively.",
+     "see_more_link": "https://example.com/about-john-doe-database",
+     "logo": "mongodb"
+   }
+ ]
+ 

@@ -10,10 +10,13 @@ module.exports = {
    theme: {
      extend: {
        colors: {
+        // light
          primaryLightBG: "#E1F0DA",
          primaryLightFocus: "#E76F51",
          primaryLightText: "#1B2430",
          secoundryLightText: "#000000",
+         whoamiLightBG: "#5AB2FF",
+        //  dark
          whoamiDarkBG: "#0C0C0C",
          primaryDarkBG: "#1B2430",
          primaryDarkFocus: "#E76F51",
