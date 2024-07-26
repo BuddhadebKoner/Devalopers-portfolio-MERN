@@ -13,6 +13,7 @@ import Post from "./pages/Post.jsx";
 import Aboutme from "./pages/Aboutme.jsx";
 import Explore from "./pages/Explore.jsx";
 import Allprojects from "./pages/Allprojects.jsx";
+import Footer from "./pages/Footer";
 
 const Main = () => {
    useEffect(() => {
@@ -37,6 +38,7 @@ const Main = () => {
             <Route path="aboutme" element={<Aboutme />} />
             <Route path="explore" element={<Explore />} />
             <Route path="allprojects" element={<Allprojects />} />
+            <Route path="footer" element={<Footer />} />
          </Route>
       )
    );

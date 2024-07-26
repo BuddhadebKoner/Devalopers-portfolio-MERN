@@ -17,13 +17,13 @@ export const TextRevealByWord = ({ text, className }) => {
       <div ref={targetRef} className={cn("relative z-0 h-[200vh]", className)}>
          <div
             className={
-               "sticky top-0 mx-auto flex h-[50%] max-w-4xl items-center bg-transparent px-[1rem] py-[5rem]"
+               "sticky w-fit top-0 mx-auto flex h-[50%] max-w-4xl items-center bg-transparent px-[1rem] py-[5rem]"
             }
          >
             <p
                ref={targetRef}
                className={
-                  "flex flex-wrap p-5 text-2xl font-bold text-black/20 dark:text-white/20 md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-7xl"
+                  "flex flex-wrap w-full p-5 text-2xl font-bold text-black/20 dark:text-white/20 md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-7xl"
                }
             >
                {words.map((word, i) => {
@@ -47,23 +47,25 @@ export const TextRevealByWord = ({ text, className }) => {
 
 const Word = ({ children, progress, range }) => {
    const { themeMode } = useTheme();
-
    const opacity = useTransform(progress, range, [0, 1]);
+
    return (
-      <span className="xl:lg-3 relative mx-1 lg:mx-2.5">
-         <span className={"absolute opacity-30"}>{children}</span>
+      <span className="relative inline-block">
+         <span className="absolute opacity-30">{children}</span>
          <motion.span
             style={{ opacity: opacity }}
-            className={`${
+            className={`custom-font ${
                themeMode === "dark"
                   ? "text-white dark:text-white"
-                  : "text-white dark:text-white"
-            } `}
+                  : "text-black dark:text-black"
+            }`}
          >
             {children}
          </motion.span>
       </span>
    );
 };
+
+
 
 export default TextRevealByWord;

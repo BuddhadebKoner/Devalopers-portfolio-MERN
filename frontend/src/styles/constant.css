@@ -36,6 +36,10 @@ body {
    justify-content: flex-start;
    user-select: none;
 }
+.custom-font {
+   font-family: 'Your Font Family', sans-serif;
+ }
+ 
 
 
 /* scrollbar */

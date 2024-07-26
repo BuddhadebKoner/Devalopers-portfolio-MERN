@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import { Outlet } from 'react-router-dom';
+import Footer from './Footer';
 
 export default function Index (){
 
@@ -9,6 +10,7 @@ export default function Index (){
      <>
      <Navbar/>
      <Outlet/>
+     <Footer/>
      </>
 
    )
