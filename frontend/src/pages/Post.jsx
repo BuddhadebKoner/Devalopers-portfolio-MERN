@@ -1,7 +1,8 @@
 import React from "react";
+import Uploadpost from "../components/Uploadpost";
 
 export default function Post() {
    return <>
-   <h1>post</h1>
+      <Uploadpost />
    </>;
 }

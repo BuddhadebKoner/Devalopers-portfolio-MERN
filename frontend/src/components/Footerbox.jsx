@@ -167,7 +167,7 @@ export default function Footerbox() {
                      </div>
 
                      <div>
-                        <strong className="font-medium ">
+                        <strong className="font-medium">
                            About
                         </strong>
 
