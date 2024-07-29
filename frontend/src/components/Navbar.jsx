@@ -33,7 +33,7 @@ export default function Navbar() {
             <title>{currentTitle}</title>
          </Helmet>
          <div
-            className={`navbar_container flex items-center justify-start w-full h-24 px-8  ${
+            className={`navbar_container fixed z-10 flex items-center justify-start w-full h-24 px-8  ${
                themeMode === "dark" ? "bg-primaryDarkBG" : "bg-primaryLightBG"
             }`}
          >

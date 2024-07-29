@@ -97,7 +97,7 @@ export default function Homehero() {
                themeMode === "dark"
                   ? "bg-primaryDarkBG bg-gradient-to-b from-transparent   to-whoamiDarkBG"
                   : "bg-primaryLightBG bg-gradient-to-b from-transparent to-whoamiLightBG"
-            }`}
+               }`}
          >
             <IconCloud iconSlugs={slugs} themeMode />
          </div>
