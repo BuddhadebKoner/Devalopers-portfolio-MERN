@@ -3,7 +3,6 @@ import whatIDo from "./what_i_do.json";
 import tweets from "./tweets.json";
 import resume from "./resume.json";
 import projects from "./projects.json";
-import post from "./post.json";
 
 const data = {
    user,
@@ -11,7 +10,6 @@ const data = {
    tweets,
    resume,
    projects,
-   post,
 };
 
 export default data;

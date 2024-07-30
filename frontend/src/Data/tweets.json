@@ -1,20 +1,43 @@
 {
-   "tweets": [
-     {
-       "dp_link": "https://example.com/profile1.jpg",
-       "user_name": "john_doe",
-       "mess": "Just finished a new project! Check it out on my portfolio site."
-     },
-     {
-       "dp_link": "https://example.com/profile2.jpg",
-       "user_name": "john_doe",
-       "mess": "Excited about the upcoming tech conference. Can't wait to learn and network!"
-     },
-     {
-       "dp_link": "https://example.com/profile3.jpg",
-       "user_name": "john_doe",
-       "mess": "Working on some cool new features for my website. Stay tuned for updates!"
-     }
-   ]
- }
- 
+  "posts": [
+    {
+      "type": "imgPost",
+      "dp_link": "https://example.com/profile1.jpg",
+      "user_name": "john_doe",
+      "image_link": "https://example.com/image1.jpg",
+      "image_desc": "Enjoying a beautiful sunset at the beach."
+    },
+    {
+      "type": "imgPost",
+      "dp_link": "https://example.com/profile2.jpg",
+      "user_name": "john_doe",
+      "image_link": "https://example.com/image2.jpg",
+      "image_desc": "Working on a new project in my home office."
+    },
+    {
+      "type": "imgPost",
+      "dp_link": "https://example.com/profile3.jpg",
+      "user_name": "john_doe",
+      "image_link": "https://example.com/image3.jpg",
+      "image_desc": "Exploring the city during a weekend getaway."
+    },
+    {
+      "type": "tweet",
+      "dp_link": "https://example.com/profile1.jpg",
+      "user_name": "john_doe",
+      "mess": "Just finished a new project! Check it out on my portfolio site."
+    },
+    {
+      "type": "tweet",
+      "dp_link": "https://example.com/profile2.jpg",
+      "user_name": "john_doe",
+      "mess": "Excited about the upcoming tech conference. Can't wait to learn and network!"
+    },
+    {
+      "type": "tweet",
+      "dp_link": "https://example.com/profile3.jpg",
+      "user_name": "john_doe",
+      "mess": "Working on some cool new features for my website. Stay tuned for updates!"
+    }
+  ]
+}

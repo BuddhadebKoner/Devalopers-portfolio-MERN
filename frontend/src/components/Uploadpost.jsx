@@ -8,7 +8,7 @@ const Tweets = () => (
          <input type="text" placeholder='Enter Your Full Name' required
             className='w-full h-16 p-5 rounded-lg outline-none bg-inputBGLight text-xl text-white' />
          <textarea name="" id="" placeholder='Whats about your post ?'
-            className='w-full h-[100px] p-5 rounded-lg outline-none bg-inputBGLight text-xl text-white resize-none'>
+            className='w-full h-[100px] p-5 rounded-lg outline-none bg-inputBGLight text-xl text-white resize-none' required>
          </textarea>
          <button type="submit" className='w-full h-12 bg-white rounded-lg text-black text-lg font-semibold'>Upload</button>
       </form>
@@ -58,7 +58,7 @@ const ImagePost = () => {
                onClick={handleClick}
             >
                {image ? (
-                  <img src={image} alt="Dropped" className='w-full h-full object-contain rounded-lg' />
+                  <img src={image} alt="Dropped" className='w-full h-full object-contain rounded-lg'/>
                ) : (
                   <span>Drop Image Here</span>
                )}
@@ -70,7 +70,7 @@ const ImagePost = () => {
                className='hidden'
             />
             <textarea name="" id="" placeholder='Whats about your post ?'
-               className='w-full h-[100px] p-5 rounded-lg outline-none bg-inputBGLight text-xl text-white resize-none'>
+               className='w-full h-[100px] p-5 rounded-lg outline-none bg-inputBGLight text-xl text-white resize-none' required>
             </textarea>
             <button type="submit" className='w-full h-12 bg-white rounded-lg text-black text-lg font-semibold'>Upload</button>
          </form>
@@ -87,8 +87,8 @@ export default function TabbedComponents() {
    ];
 
    return (
-      <div className="flex flex-col items-center justify-center mx-2 my-2 text-black">
-         <div className="flex items-center justify-between bg-cardBgLightmode text-white gap-10 p-4 rounded-lg">
+      <div className="flex w-[30vw] flex-col items-center justify-center mx-2 my-2 text-black">
+         <div className="flex w-[30vw] items-center justify-between bg-cardBgLightmode text-white gap-10 p-4 rounded-lg">
             {tabs.map(tab => (
                <button
                   key={tab.key}
