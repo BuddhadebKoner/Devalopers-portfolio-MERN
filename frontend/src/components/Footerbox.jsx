@@ -1,10 +1,7 @@
 import React from "react";
 import useTheme from "@/context/Theme";
-import { useForm } from "@formspree/react";
 
 export default function Footerbox() {
-   const formId = import.meta.env.VITE_FORMID;
-   const [state, handleSubmit] = useForm(formId);
    const { themeMode } = useTheme();
    return (
       <>
@@ -18,49 +15,6 @@ export default function Footerbox() {
                `}
          >
             <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-20 sm:px-6 lg:px-8">
-               <div className="mx-auto max-w-md">
-                  <strong className="block text-center text-xl font-bold sm:text-3xl">
-                     Hey There! Drop Here Your&nbsp;
-                     <span className="text-primaryDarkFocus">Feedback</span>
-                  </strong>
-
-                  <form
-                     className="mt-6 bg-primaryDarkBG p-6 rounded-lg shadow-lg"
-                     onSubmit={handleSubmit}
-                  >
-                     <div className="relative max-w-lg">
-                        <label className="sr-only" htmlFor="email">
-                           Email
-                        </label>
-                        <input
-                           className="w-full rounded-full border-primaryDarkText bg-primaryDarkBG p-4 text-sm font-medium text-primaryDarkText placeholder-primaryDarkText focus:outline-none focus:ring-2 focus:ring-primaryDarkFocus"
-                           id="email"
-                           name="email"
-                           type="email"
-                           placeholder="john@doe.com"
-                           required
-                        />
-                        <label className="sr-only" htmlFor="message">
-                           Message
-                        </label>
-                        <textarea
-                           className="w-full max-h-[100px] overflow-hidden mt-4 rounded-lg border-primaryDarkText bg-primaryDarkBG p-4 text-sm font-medium text-primaryDarkText placeholder-primaryDarkText focus:outline-none focus:ring-2 focus:ring-primaryDarkFocus"
-                           id="message"
-                           name="message"
-                           placeholder="Your short message here"
-                           rows="4"
-                           required
-                        />
-                        <button
-                           className="mt-4 w-full rounded-full bg-primaryDarkFocus px-5 py-3 text-sm font-medium text-primaryDarkText transition hover:bg-primaryDarkFocus/80 focus:outline-none focus:ring-2 focus:ring-primaryDarkFocus"
-                           type="submit"
-                           disabled={state.submitting}
-                        >
-                           {state.succeeded ? "Subscribed" : "Subscribe"}
-                        </button>
-                     </div>
-                  </form>
-               </div>
 
                <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
                   <div className="mx-auto max-w-sm lg:max-w-none">
